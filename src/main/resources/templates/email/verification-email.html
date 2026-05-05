@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificação de Email</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
+
+<div style="max-width: 600px; background-color: #ffffff; padding: 30px; border-radius: 8px; margin: auto;">
+
+    <h2 style="color: #333333;">
+        Olá <span th:text="${name}">Usuário</span>,
+    </h2>
+
+    <p>Seja bem-vindo(a) à <strong>Labify</strong>!</p>
+
+    <p>Para ativar sua conta, clique no botão abaixo:</p>
+
+    <p style="text-align: center;">
+        <a th:href="${url}"
+           style="background-color: #4CAF50; color: white; padding: 12px 25px;
+                  text-decoration: none; border-radius: 5px; display: inline-block; margin: 15px 0;">
+            Verificar meu e-mail
+        </a>
+    </p>
+
+    <p style="font-size: 12px; text-align: center; color: #888888;">
+        Se você não realizou este cadastro, ignore este e-mail.
+    </p>
+
+    <p style="font-size: 10px; text-align: center; color: #888888;">
+        © 2025 Labify. Todos os direitos reservados.
+    </p>
+
+</div>
+
+</body>
+</html>
